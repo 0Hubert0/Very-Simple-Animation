@@ -1,0 +1,110 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#content
+{
+	background-image: linear-gradient(to right, #7ACFFA, #FAFAAC);
+	width: 100%;
+	height: 600px;
+}
+
+#circle
+{
+	width: 110px;
+	height: 260px;
+	margin-left: 500px;
+	margin-top: 30px;
+	position: absolute;
+	transform-origin: bottom;
+	animation: turn1 10s linear infinite;
+}
+
+#hexagon
+{
+	height: 100px;
+	animation: turn1 3s linear infinite;
+}
+
+@keyframes turn1
+{
+	0% {transform: rotate(0deg);}
+	10% {transform: rotate(36deg);}
+	20% {transform: rotate(72deg);}
+	30% {transform: rotate(108deg);}
+	40% {transform: rotate(144deg);}
+	50% {transform: rotate(180deg);}
+	60% {transform: rotate(216deg);}
+	70% {transform: rotate(252deg);}
+	80% {transform: rotate(288deg);}
+	90% {transform: rotate(324deg);}
+	100% {transform: rotate(360deg);}
+}
+
+@keyframes turn2
+{
+	0% {transform: rotate(360deg);}
+	10% {transform: rotate(324deg);}
+	20% {transform: rotate(288deg);}
+	30% {transform: rotate(252deg);}
+	40% {transform: rotate(216deg);}
+	50% {transform: rotate(180deg);}
+	60% {transform: rotate(144deg);}
+	70% {transform: rotate(108deg);}
+	80% {transform: rotate(72deg);}
+	90% {transform: rotate(36deg);}
+	100% {transform: rotate(0deg);}
+}
+
+.triangle
+{
+	position: absolute;
+	border-left: 29px solid transparent;
+	border-right: 29px solid transparent;
+	margin-top: 65px;
+	margin-left: 30px;
+}
+
+#blue
+{
+	border-bottom: 50px solid blue;
+	transform-origin: top;
+	transform: rotate(60deg);
+}
+
+#yellow
+{
+	border-bottom: 50px solid yellow;
+	transform-origin: top;
+	transform: rotate(120deg);
+}
+
+#red
+{
+	border-bottom: 50px solid red;
+	transform-origin: top;
+	transform: rotate(180deg);
+}
+
+#green
+{
+	border-bottom: 50px solid green;
+	transform-origin: top;
+	transform: rotate(240deg);
+}
+
+#orange
+{
+	border-bottom: 50px solid orange;
+	transform-origin: top;
+	transform: rotate(300deg);
+}
+
+#purple
+{
+	border-bottom: 50px solid purple;
+	transform-origin: top;
+}
